@@ -2,22 +2,18 @@
 using namespace std;
 
 int main(){
-	string s;
-	int i,n;
+	int i,n,s,fn,bn;
 	while(cin>>s>>n){
-        int i,j,t=s.length();
-        for(j=0; j<=n; j++){
-            for(i=s.length()-1; i>=t; i--){
-                if(s[i]!='0'){
-                    cout<<s[i];
-                }
+        int i,j,t;
+        for(j=0; j<n; j++){
+            t=1;
+            while(s/t>10){
+                t*=10;
             }
-            for(i=0; i<t; i++){
-                cout<<s[i];
-            }
-            cout<<endl;
-            if(t!=0)
-                t--;
+            fn=s/10;
+            bn=s%10;
+            s=bn*t+fn;
+            cout<<s<<endl;
         }
 	}
 	return 0;
