@@ -2,11 +2,12 @@
 using namespace std;
 
 int main(){
-	int a,b,count,max_count;
+	int a,b,count,max_count,x,y;
 	while(cin>>a>>b){
         if(!a&&!b){
             break;
         }
+        x=a; y=b;
         if(b<a){
             int t;
             t=b;
@@ -31,7 +32,7 @@ int main(){
                 max_count=count;
             }
         }
-        cout<<a<<" "<<b<<" "<<max_count<<endl;
+        cout<<x<<" "<<y<<" "<<max_count<<endl;
 	}
 	return 0;
 }
