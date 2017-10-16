@@ -25,6 +25,7 @@ int main(){
             if(!has_quality){
                 cout<<a<<endl<<"1\n";
             }
+            if(i<n-1)
             cout<<endl;
         }
 	}

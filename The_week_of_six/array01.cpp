@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-	int x,y,n,sum;
+	long long int x,y,n,sum;
 	while(cin>>x>>y>>n){
         if(!x&&!y&&!n){
             break;
