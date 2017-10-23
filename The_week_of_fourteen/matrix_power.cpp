@@ -12,8 +12,8 @@ int bin(int a,int *b){
         i++;
     }
 //        cout<<"AA";
-    for(int k=i-1; k>=0; k--)
-        cout<<b[k];
+//    for(int k=i-1; k>=0; k--)
+//        cout<<b[k];
 //        cout<<"CC";
     return i;
 }
