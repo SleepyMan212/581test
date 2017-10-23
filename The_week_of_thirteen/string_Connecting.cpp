@@ -29,10 +29,10 @@ int main(){
                             max_c=k;
 //                    }
                 }
-                cout<<max_c<<endl;
+//                cout<<max_c<<endl;
 //                for(i=0; iM)
                 int re_lenth=strlen(result);
-                for(j=strlen(result); j<re_lenth+strlen(a[i+1])-1-max_c; j++){
+                for(j=strlen(result); j<re_lenth+strlen(a[i+1])-max_c; j++){
                     result[j]=a[i+1][max_c+j-re_lenth];
 //                    cout<<a[i+1][max_c+j-strlen(result)];
                 }
@@ -40,7 +40,7 @@ int main(){
 //            for(j=k; j<strlen(a[i+1]); j++){
 //                strcpy(result,a[i+1][j])
 //            }
-            cout<<result<<endl;
+            cout<<strlen(result)<<endl<<result<<endl;
 //            for(i=0; i<m; i++){
 //                for(j=0; j<strlen(a[i]); j++){
 //                    cout<<a[i][j];
