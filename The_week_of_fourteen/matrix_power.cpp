@@ -23,7 +23,7 @@ int main(){
 	long long i,j,k,t,bl;
 	int bin_pow[10000];
 //	bin(34,bin_pow);
-//    freopen("powermatrix.in","r",stdin);
+    freopen("powermatrix.in","r",stdin);
 	while(cin>>d>>y>>p){
         if(!d&&!y&&!p)
             break;
@@ -36,7 +36,7 @@ int main(){
         //covert to binary
         bl=bin(y,bin_pow);
 
-        bool first=true;
+//        bool first=true;
 
         // calculate the matrix of 2's power
         for(t=0; t<bl-1; t++){
@@ -44,10 +44,10 @@ int main(){
                 for(j=0; j<d; j++){
                     sum=0;
                     for(k=0; k<d; k++){
-                        if(first)
-                            sum=sum+(c[0][i][k]*c[t][k][j])%p;
-                        else
-                            sum=sum+(c[1][i][k]*c[t][k][j])%p;
+//                        if(first)
+//                            sum=sum+(c[t][i][k]*c[t][k][j])%p;
+//                        else
+                            sum=sum+(c[t][i][k]*c[t][k][j])%p;
 //                        sum%=p;
                     }
 //                    cout<<sum<<endl;
@@ -56,7 +56,7 @@ int main(){
                 }
 //                cout<<endl;
             }
-            first=false;
+//            first=false;
 //            cout<<"WW"<<endl;
         }
 
