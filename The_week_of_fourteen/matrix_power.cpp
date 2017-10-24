@@ -1,6 +1,6 @@
 #include <iostream>
-#include <string.h>
-#include <stdio.h>
+//#include <string.h>
+//#include <stdio.h>
 using namespace std;
 
 int bin(int a,int *b){
@@ -23,7 +23,7 @@ int main(){
 	long long i,j,k,t,bl;
 	int bin_pow[10000];
 //	bin(34,bin_pow);
-    freopen("powermatrix.in","r",stdin);
+//    freopen("powermatrix.in","r",stdin);
 	while(cin>>d>>y>>p){
         if(!d&&!y&&!p)
             break;
