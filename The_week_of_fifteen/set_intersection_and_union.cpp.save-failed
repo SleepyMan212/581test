@@ -1,0 +1,80 @@
+#include <iostream>
+#include <set>
+#include <string.h>
+using namespace std;
+
+void intersection(char *a,char *b,char *c){
+//    cout<<"xxx"<<endl;
+    int i,j,k;
+    bool flag;
+    memset(c,'\0',sizeof(c));
+    for(i=0; i<strlen(a); i++){
+        for(j=0; j<strlen(b);j++){
+            flag=true;
+            if(a[i]==b[i]){
+                for(k=0; k<strlen(c); k++){
+                    if(c[k]==a[i]){
+                        flag=false;
+                        break;
+                    }
+                }
+//                if(flag);
+                c[k]=a[i];
+            }
+        }
+    }
+}
+void uni(char *a,char *c){
+    int i,j,k;
+    bool flag;
+    cout<<"HHHHH"<<endl;
+    for(i=0; i<strlen(a); i++){
+        for(k=0; k<strlen(c); k++){
+            flag=true;
+            if(c[k]==a[i]){
+                flag=false;
+                break;
+            }
+//            if(flag)
+                c[k]=i;
+        }
+    }
+}
+int main(){
+	char c[100];
+	char b[50][100];
+	char op;
+	int n,m;
+	int x,y;
+	int i,j,k;
+	while(cin>>m>>n){
+        for(i=0; i<m; i++){
+            cin>>b[i];
+        }
+//        cout<<"WW"<<endl;
+        for(i=0; i<n; i++){
+            cin>>x>>op>>y;
+//            cout<<"GGG"<<endl;
+//        for(i=0; i<n; i++){
+//            cout<<"TTT"<<endl;
+            switch(op){
+                case'+':
+                    memset(c,'\0',sizeof(c));
+                    uni(b[x],c);
+                    cout<<c<<endl;
+                    uni(b[y],c);
+                    cout<<c<<endl;
+                    break;
+                case'*':
+                    intersection(b[x],b[y],c);
+//                    if(!c)
+                    cout<<c<<endl;
+                    break;
+            }
+            if(c!='\0') cout<<c<<endl;
+            else cout<<-1<<endl;
+        }
+
+	}
+	return 0;
+}
