@@ -30,8 +30,11 @@ int main(){
                 }
             }
             for(j=2*d; j>=0; j--){
-                cout<<poly[d][j]<<" ";
+                cout<<poly[d][j];
+                if(j)
+                    cout<<" ";
             }
+            if(i!=n-1)
             cout<<endl;
         }
     }

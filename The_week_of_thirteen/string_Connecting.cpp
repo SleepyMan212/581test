@@ -40,7 +40,10 @@ int main(){
 //            for(j=k; j<strlen(a[i+1]); j++){
 //                strcpy(result,a[i+1][j])
 //            }
-            cout<<strlen(result)<<endl<<result<<endl;
+            result[9]='\0';
+            cout<<strlen(result)<<endl<<result;
+            if(n!=0)
+                cout<<endl;
 //            for(i=0; i<m; i++){
 //                for(j=0; j<strlen(a[i]); j++){
 //                    cout<<a[i][j];

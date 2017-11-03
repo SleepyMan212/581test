@@ -34,7 +34,9 @@ int main(){
                 }
 
             }
-            cout<<len<<endl;
+            cout<<len;
+            if(i!=t-1)
+                cout<<endl;
         }
 	}
 	return 0;

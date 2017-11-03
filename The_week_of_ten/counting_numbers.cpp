@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string.h>
-#include <stdio.h>
+//#include <stdio.h>
 using namespace std;
 
 int get_index(int a,int *s,int *c){
@@ -14,7 +14,7 @@ int get_index(int a,int *s,int *c){
     return (*s)++;
 }
 int main(){
-    freopen("counting_numbers.txt","r",stdin);
+//    freopen("counting_numbers.txt","r",stdin);
     int a[100],s,n,t,index,c[100];
     int i,j,k,tmp;
     while(cin>>t){
@@ -37,7 +37,9 @@ int main(){
                         }
                     }
                     for(j=0; j<s; j++){
-                        cout<<c[j]<<" "<<a[j]<<endl;
+                        cout<<c[j]<<" "<<a[j];
+                        if(j!=s-1)
+                            cout<<endl;
                     }
                     break;
                 }
@@ -48,7 +50,8 @@ int main(){
 //                cout<<a[index]<<endl;
 
             }
-            cout<<"\n";
+            if(i!=t-1)
+            cout<<"\n\n";
         }
     }
 	return 0;

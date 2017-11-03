@@ -6,10 +6,10 @@ void add_sum(int i,int j,int *a){
     for(; i<j; i++){
         sum+=a[i];
     }
-    cout<<sum<<endl;
+    cout<<sum;
 }
 int main(){
-	int n,k,t[1001];
+	int n,k,t[100000];
 	int a,b,i;
 	while(cin>>n>>k){
         for(i=0; i<n; i++){
@@ -21,6 +21,8 @@ int main(){
                 add_sum(b-1,a,t);
             else
                 add_sum(a-1,b,t);
+            if(i!=k-1)
+                cout<<endl;
         }
 	}
 	return 0;

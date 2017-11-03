@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string.h>
+#include <stdio.h>
 using namespace std;
 
 void swap(int *a,int *b){
@@ -9,6 +10,7 @@ void swap(int *a,int *b){
     *a=t;
 }
 int main(){
+    freopen("score.in","r",stdin);
 	int b[1001],a[1001][4];
 	int t,n,k,count;;
 	double ave[4];
@@ -52,16 +54,20 @@ int main(){
             }
             for(j=0; j<k; j++){
                 for(s=0; s<4; s++){
-                    cout<<a[b[j]][s]<<" ";
+                    cout<<a[b[j]][s];
+                    if(s!=3)
+                        cout<<" ";
                 }
                 cout<<endl;
             }
             for(j=0; j<3; j++){
-                cout<<fixed<<setprecision(2)<<ave[j]<<" ";
+                cout<<fixed<<setprecision(2)<<ave[j];
+                if(j!=2)
+                    cout<<" ";
             }
-            cout<<endl;
+//            cout<<endl;
             if(count<t){
-                cout<<endl;
+                cout<<endl<<endl;
             }
         }
 	}

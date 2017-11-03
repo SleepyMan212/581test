@@ -1,12 +1,12 @@
 #include <iostream>
-#include <stdio.h>
+//#include <stdio.h>
 using namespace std;
 
 int main(){
 	int a[1000],b[1000],c[2001];
 	int t ,a_len,b_len;
 	int i,j,x,y,cou;
-	freopen("merge.txt","r",stdin);
+//	freopen("merge.in","r",stdin);
 	while(cin>>t){
         for(i=0; i<t; i++){
             cin>>a_len>>b_len;
@@ -31,13 +31,17 @@ int main(){
             cout<<cou<<endl;
             if(a_len+b_len<=6){
                 for(j=0; j<a_len+b_len; j++){
-                    cout<<c[j]<<" ";
+                    cout<<c[j];
+                    if(j<a_len+b_len-1)
+                        cout<<" ";
                 }
             }else{
                 cout<<c[0]<<" "<<c[1]<<" "<<c[2]
                 <<" "<<c[a_len+b_len-3]<<" "<<c[a_len+b_len-2]<<" "<<c[a_len+b_len-1];
             }
-            cout<<endl;
+            if(i<t-1){
+                cout<<endl;
+            }
         }
 	}
 	return 0;

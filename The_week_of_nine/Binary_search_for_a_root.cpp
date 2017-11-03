@@ -40,7 +40,9 @@ int main(){
                 }
                 x=(a+b)/2;
             }
-            cout<<fixed<<setprecision(5)<<<<endl;
+            cout<<fixed<<setprecision(5)<<x;
+            if(i!=time-1)
+            cout<<endl;
         }
     }
 	return 0;
