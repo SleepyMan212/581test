@@ -1,8 +1,9 @@
-#include <iostream>
-#include <cmath>
+//#include <iostream>
+#include <math.h>
 //#include <stdio.h>
 #include <string.h>
-using namespace std;
+#include <stdio.h>
+//using namespace std;
 
 int main(){
 	int n,m;
@@ -15,13 +16,13 @@ int main(){
         while(n--){
 //                cout<<"WW"<<endl;
 //            while(cin>>m){
-            cin>>m;
+            scanf("%d",&m);
             for(i=0; i<m; i++){
-                cin>>a[i];
-                b[i]=false;
+                scanf("%d",&a[i]);
+                b[i]=0;
             }
             memset(b,0,sizeof(b));
-            is_jolly1=true;
+            is_jolly1=1;
             for(i=1; i<m; i++){
 //                if(abs(a[i]-a[i-1])!=m-i){
 //                    is_jolly1=false;
@@ -33,7 +34,7 @@ int main(){
                 if(abs(a[i]-a[i-1])<m){
                     t=abs(a[i]-a[i-1]);
 //                    is_jolly1=false;
-                    b[t]=true;
+                    b[t]=1;
                 }
 //                cout<<"EEE"<<endl;
             }
@@ -44,18 +45,21 @@ int main(){
 //                cout<<"Not jolly";
 //            }
             for(i=1; i<m; i++){
-                if(b[i]==false){
-                    is_jolly1=false;
+                if(b[i]==0){
+                    is_jolly1=0;
                     break;
                 }
             }
             if(is_jolly1){
-                cout<<"Jolly";
+//                cout<<"Jolly";
+                printf("Jolly");
             }else{
-                cout<<"Not jolly";
+//                cout<<"Not jolly";
+                printf("Not jolly");
             }
             if(n!=0)
-                cout<<endl;
+//                cout<<endl;
+                puts("");
 //            }
         }
 	}

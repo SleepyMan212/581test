@@ -1,7 +1,7 @@
-#include <iostream>
+//#include <iostream>
 #include <string.h>
 #include <stdio.h>
-using namespace std;
+//using namespace std;
 
 //void c1(int n,int m){
 //    if(m>n/2){
@@ -24,9 +24,9 @@ int main(){
             memset(poly,0,sizeof(poly));
             poly[0][0]=1;
 //            cin>>p[2]>>p[1]>>p[0]>>d;
-            scanf("%d%d%d%d",&p[1],&p[2],&p[0],&d);
-            for(j=0; j<d; j++){
-                for(k=0; k<2*j+1; k++){
+            scanf("%d%d%d%d",&p[2],&p[1],&p[0],&d);
+            for(j=0; j<=d; j++){
+                for(k=0; k<2*(j+1)+1; k++){
                     for(t=0; t<3; t++){
                             poly[j+1][t+k]+=poly[j][k]*p[t];
                     }

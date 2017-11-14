@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <iomanip>
-//#include <stdio.h>
+#include <stdio.h>
 using namespace std;
 
 double f(int p,double x,double *c){
@@ -16,8 +16,8 @@ double f(int p,double x,double *c){
 }
 int main(){
 //    freopen("Binary_search_for_a_root.txt","r",stdin);
-//    freopen("root.in","r",stdin);
-    double c[8],x,a,b;
+    freopen("root.in","r",stdin);
+    long double c[8],x,a,b;
     int time,p;
     while(cin>>time){
 //        cout<<pow(0.5,0)<<endl;

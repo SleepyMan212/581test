@@ -2,7 +2,7 @@
 //using namespace std;
 #include <stdio.h>
 int main(){
-	int a,b,count,max_count,x,y;
+	int a,b,c,max_count,x,y;
 	while(scanf("%d%d",&a,&b)==2){
         if(!a&&!b){
             break;
@@ -17,7 +17,7 @@ int main(){
         int i,j;
         max_count=-5555;
         for(i=a; i<=b; i++){
-            count=1;
+            c=1;
             j=i;
             while(j!=1){
                 if(j%2==1){
@@ -25,11 +25,11 @@ int main(){
                 }else{
                     j/=2;
                 }
-                count++;
+                c++;
 //                cout<<count<<endl;
             }
-            if(count>max_count){
-                max_count=count;
+            if(c>max_count){
+                max_count=c;
             }
         }
 //        cout<<x<<" "<<y<<" "<<max_count<<endl;

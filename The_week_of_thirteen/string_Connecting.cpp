@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <stdio.h>
 using namespace std;
 
 int main(){
@@ -7,7 +8,7 @@ int main(){
 	int n,m;
 	int c,max_c;
 	int i,j,k;
-
+    freopen("ST14.in","r",stdin);
 	while(cin>>n){
         while(n--){
             cin>>m;
@@ -40,7 +41,7 @@ int main(){
 //            for(j=k; j<strlen(a[i+1]); j++){
 //                strcpy(result,a[i+1][j])
 //            }
-            result[9]='\0';
+            result[strlen(result)]='\0';
             cout<<strlen(result)<<endl<<result;
             if(n!=0)
                 cout<<endl;

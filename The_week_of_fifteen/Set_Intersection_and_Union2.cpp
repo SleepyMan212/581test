@@ -13,8 +13,8 @@ int main(){
 	char a[50][100];
 	unsigned long long int b[50],c;
 //	cout<<(5|3)<<endl;;
-freopen("set-op1.in","r",stdin);
-//freopen("set-op-t.in","r",stdin);
+//freopen("set-op1.in","r",stdin);
+freopen("set-op-t.in","r",stdin);
 	while(cin>>m>>n){
         for(i=0; i<m; i++){
             cin>>a[i];

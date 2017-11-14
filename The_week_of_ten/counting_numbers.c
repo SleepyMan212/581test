@@ -1,7 +1,7 @@
-#include <iostream>
+//#include <iostream>
 #include <string.h>
-//#include <stdio.h>
-using namespace std;
+#include <stdio.h>
+//using namespace std;
 
 int get_index(int a,int *s,int *c){
     int i;
@@ -14,7 +14,7 @@ int get_index(int a,int *s,int *c){
     return (*s)++;
 }
 int main(){
-    freopen("counting_numbers.txt","r",stdin);
+//    freopen("AR12.in","r",stdin);
     int a[100],s,n,t,index,c[100];
     int i,j,k,tmp;
     while(scanf("%d",&t)==1){
@@ -52,9 +52,10 @@ puts("");
 //                cout<<a[index]<<endl;
 
             }
+            puts("");
             if(i!=t-1)
 //            cout<<"\n\n";
-puts("\n");
+            puts("");
         }
     }
 	return 0;
