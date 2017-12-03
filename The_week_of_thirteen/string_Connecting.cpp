@@ -8,7 +8,7 @@ int main(){
 	int n,m;
 	int c,max_c;
 	int i,j,k;
-    freopen("ST14.in","r",stdin);
+//    freopen("ST14.in","r",stdin);
 	while(cin>>n){
         while(n--){
             cin>>m;
@@ -43,7 +43,7 @@ int main(){
 //            }
             result[strlen(result)]='\0';
             cout<<strlen(result)<<endl<<result;
-            if(n!=0)
+            if(n)
                 cout<<endl;
 //            for(i=0; i<m; i++){
 //                for(j=0; j<strlen(a[i]); j++){

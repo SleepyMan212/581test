@@ -8,7 +8,7 @@ int main(){
     int a[500];
     int i,j,k;
     int max_num,num;
-    freopen("hamming.in","r",stdin);
+//    freopen("hamming.in","r",stdin);
     while(cin>>n){
         for(i=0; i<n; i++){
             memset(a,0,sizeof(a));

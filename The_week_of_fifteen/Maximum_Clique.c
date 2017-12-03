@@ -6,7 +6,7 @@
 
 int main(){
 //    	freopen("test.in","r",stdin);
-	freopen("clique.in","r",stdin);
+//	freopen("clique.in","r",stdin);
 	int n;
     long long int uni;
 	long long int a[21];

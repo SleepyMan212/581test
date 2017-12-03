@@ -14,7 +14,7 @@ int main(){
 	unsigned long long int b[50],c;
 //	cout<<(5|3)<<endl;;
 //freopen("set-op1.in","r",stdin);
-freopen("set-op-t.in","r",stdin);
+//freopen("set-op-t.in","r",stdin);
 	while(cin>>m>>n){
         for(i=0; i<m; i++){
             cin>>a[i];
@@ -86,7 +86,7 @@ freopen("set-op-t.in","r",stdin);
                         cout<<(char)(i-26+'a');
                 }
             }
-            if(j!=m-1)
+            if(j!=n-1)
                 cout<<endl;
         }
 	}
